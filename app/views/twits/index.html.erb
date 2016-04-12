@@ -1,0 +1,14 @@
+<div class="users-page">
+  <a href="/users">Go to All users</a>
+</div>
+
+<h1> All Twits </h1>
+
+ <div>
+   <ul>
+   <% @twits.each do |twit| %>
+     <li><%= twit.body %> </li><% end %>
+   </ul>
+<%=  will_paginate @twits %>
+
+ </div>

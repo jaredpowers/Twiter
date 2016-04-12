@@ -1,0 +1,15 @@
+<p>
+  <a href="/twits">Go to All Twits</a>
+</p>
+
+<h1> All Users </h1>
+
+ <div>
+   <ol>
+     <% @users.each do |user| %>
+      <li><%= user.username %>
+      </li>
+       <a href="/users/<%= user.id %>">Show this user's twits</a>
+     <% end %>
+ </ol>
+ </div>
